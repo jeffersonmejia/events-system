@@ -41,6 +41,7 @@ public class ControllerAdmin implements ActionListener, ItemListener {
     viewAdmin.BtnSave.addActionListener(this);
     viewAdmin.RbConcert.addItemListener(this);
     viewAdmin.RbParty.addItemListener(this);
+    modelAdmin.createEventsFromJSON();
     insertEvents();
     viewAdmin.setVisible(true);
   }
