@@ -27,7 +27,6 @@ public class ModelAdmin {
   public ModelAdmin(String string, String string1, String string2, String string3, String string4) {
     connectionDB = ConnectionDB.getInstance();
     ConnectionDB.collectionName = COLLECTION_NAME;
-    createEventsFromJSON();
   }
 
   // LEE JSON E INSERTA EN DB
@@ -114,7 +113,6 @@ public class ModelAdmin {
   public boolean saveEvent(String idSelected, boolean isConcert, boolean isEdit) {
     docEvent = new Document();
     if (isEdit) {
-      System.out.println(idSelected);
       docEventOld = new Document("id", idSelected);
     } else {
       //GENERA ID: TOTAL LIBROS + 1

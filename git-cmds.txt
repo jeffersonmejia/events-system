@@ -1,0 +1,1 @@
+git add . && git commit -m 'escribe q cambiaste EN INGLES' && git pull origin main && git push origin main
