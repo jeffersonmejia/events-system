@@ -20,6 +20,7 @@ public class ViewDashboard extends javax.swing.JFrame {
     RadioBtnGroup = new javax.swing.ButtonGroup();
     PanelTitle = new javax.swing.JPanel();
     LabelTitle = new javax.swing.JLabel();
+    BtnLogout = new javax.swing.JButton();
     PanelMain = new javax.swing.JPanel();
     LabelPackage = new javax.swing.JLabel();
     RadioFamily = new javax.swing.JRadioButton();
@@ -42,7 +43,6 @@ public class ViewDashboard extends javax.swing.JFrame {
     PanelBtnEvents = new javax.swing.JPanel();
     BtnClear = new javax.swing.JButton();
     BtnSave = new javax.swing.JButton();
-    BtnLogout = new javax.swing.JButton();
     PanelTickets = new javax.swing.JPanel();
     jScrollPane2 = new javax.swing.JScrollPane();
     tableGuests = new javax.swing.JTable();
@@ -62,6 +62,16 @@ public class ViewDashboard extends javax.swing.JFrame {
     LabelTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
     LabelTitle.setText("GESTION EVENTOS");
 
+    BtnLogout.setBackground(new java.awt.Color(245, 245, 245));
+    BtnLogout.setText("Cerrar sesión");
+    BtnLogout.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+    BtnLogout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    BtnLogout.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        BtnLogoutActionPerformed(evt);
+      }
+    });
+
     javax.swing.GroupLayout PanelTitleLayout = new javax.swing.GroupLayout(PanelTitle);
     PanelTitle.setLayout(PanelTitleLayout);
     PanelTitleLayout.setHorizontalGroup(
@@ -69,13 +79,17 @@ public class ViewDashboard extends javax.swing.JFrame {
       .addGroup(PanelTitleLayout.createSequentialGroup()
         .addGap(30, 30, 30)
         .addComponent(LabelTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        .addComponent(BtnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addGap(12, 12, 12))
     );
     PanelTitleLayout.setVerticalGroup(
       PanelTitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(PanelTitleLayout.createSequentialGroup()
         .addGap(20, 20, 20)
-        .addComponent(LabelTitle)
+        .addGroup(PanelTitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+          .addComponent(LabelTitle)
+          .addComponent(BtnLogout, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE))
         .addContainerGap(20, Short.MAX_VALUE))
     );
 
@@ -247,26 +261,14 @@ public class ViewDashboard extends javax.swing.JFrame {
     BtnSave.setBorderPainted(false);
     BtnSave.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-    BtnLogout.setBackground(new java.awt.Color(245, 245, 245));
-    BtnLogout.setText("Cerrar sesión");
-    BtnLogout.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-    BtnLogout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-    BtnLogout.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        BtnLogoutActionPerformed(evt);
-      }
-    });
-
     javax.swing.GroupLayout PanelBtnEventsLayout = new javax.swing.GroupLayout(PanelBtnEvents);
     PanelBtnEvents.setLayout(PanelBtnEventsLayout);
     PanelBtnEventsLayout.setHorizontalGroup(
       PanelBtnEventsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(PanelBtnEventsLayout.createSequentialGroup()
-        .addGap(30, 30, 30)
-        .addComponent(BtnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        .addComponent(BtnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addGap(12, 12, 12)
+        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        .addComponent(BtnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addComponent(BtnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
         .addGap(12, 12, 12))
     );
@@ -274,10 +276,9 @@ public class ViewDashboard extends javax.swing.JFrame {
       PanelBtnEventsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(PanelBtnEventsLayout.createSequentialGroup()
         .addGap(12, 12, 12)
-        .addGroup(PanelBtnEventsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(PanelBtnEventsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(BtnSave, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-          .addComponent(BtnLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-          .addComponent(BtnClear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+          .addComponent(BtnClear, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE))
         .addGap(12, 12, 12))
     );
 

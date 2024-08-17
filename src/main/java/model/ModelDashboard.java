@@ -180,7 +180,9 @@ public class ModelDashboard extends Events {
         event.getString("date"),
         event.getString("place"),
         event.getString("band"),
-        event.getString("type")
+        event.getString("type"),
+        event.getString("price")
+
       };
       //GUARDA EVENTOS EN UNA LISTA
       listEvents.add(eventObject);
