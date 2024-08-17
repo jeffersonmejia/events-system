@@ -44,6 +44,7 @@ public class ModelAdmin {
                 .append("band", event.get("band"))
                 .append("type", event.get("type"))
                 .append("price", event.get("price"));
+        connectionDB.createDocument(docEvent);
       }
     } catch (IOException | ParseException e) {
       e.printStackTrace();
