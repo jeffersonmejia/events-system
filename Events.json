@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "place": "Auditorio Nacional",
+    "name": "Concierto de Rock",
+    "band": "Rock Band",
+    "type": "concierto",
+    "date": "14/07/2024",
+    "price": "50"
+  },
+  {
+    "id": "2",
+    "place": "Palacio de los Deportes",
+    "name": "Fiesta Electronica",
+    "band": "N/A",
+    "type": "fiesta",
+    "date": "14/07/2024",
+    "price": "30"
+  },
+  {
+    "id": "3",
+    "place": "Teatro Metropolitan",
+    "name": "Concierto Acustico",
+    "band": "The Acoustic Band",
+    "type": "concierto",
+    "date": "14/07/2024",
+    "price": "40"
+  },
+  {
+    "id": "4",
+    "place": "Estadio Azteca",
+    "name": "Festival de Musica",
+    "band": "Music Festival Band",
+    "type": "concierto",
+    "date": "14/07/2024",
+    "price": "60"
+  },
+  {
+    "id": "5",
+    "place": "Foro Sol",
+    "name": "Fiesta Tematica",
+    "band": "N/A",
+    "type": "fiesta",
+    "date": "14/07/2024",
+    "price": "25"
+  },
+  {
+    "id": "6",
+    "place": "Teatro Metropolitan",
+    "name": "Gala de Opera",
+    "band": "Opera Singers",
+    "type": "concierto",
+    "date": "14/07/2024",
+    "price": "70"
+  },
+  {
+    "id": "7",
+    "place": "Foro Sol",
+    "name": "Jazz Night",
+    "band": "Jazz Trio",
+    "type": "concierto",
+    "date": "14/07/2024",
+    "price": "35"
+  },
+  {
+    "id": "8",
+    "place": "Club Nocturno",
+    "name": "Fiesta de Disfraces",
+    "band": "N/A",
+    "type": "fiesta",
+    "date": "14/07/2024",
+    "price": "20"
+  },
+  {
+    "id": "9",
+    "place": "Foro Sol",
+    "name": "Blues Festival",
+    "band": "Blues Brothers",
+    "type": "concierto",
+    "date": "14/07/2024",
+    "price": "45"
+  },
+  {
+    "id": "10",
+    "place": "Arena Ciudad de Mexico",
+    "name": "Evento Especial",
+    "band": "N/A",
+    "type": "fiesta",
+    "date": "14/07/2024",
+    "price": "55"
+  }
+]
